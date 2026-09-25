@@ -1,0 +1,52 @@
+export type ContentPage = {
+  slug: string; title: string; eyebrow: string; description: string; intro: string;
+  sections: { title: string; body: string[]; list?: string[] }[];
+  faqs?: { question: string; answer: string }[];
+};
+
+export const pages: ContentPage[] = [
+  { slug:"dra-catalina-ovares", title:"Dra. Catalina Ovares", eyebrow:"ORTODONCIA CON CALIDEZ Y PRECISIÓN", description:"Conozca el enfoque profesional de la Dra. Catalina Ovares en ortodoncia y alineadores dentales en Costa Rica.", intro:"Una atención cercana comienza por escuchar. Catalina acompaña a cada paciente con información clara, valoración individual y un plan pensado para su sonrisa.", sections:[
+    {title:"Una forma personal de acompañarte",body:["La filosofía de Ovares Ortodoncia parte de comprender las necesidades, expectativas y rutina de cada persona antes de proponer un tratamiento.","La información disponible se explica con claridad para que cada decisión se tome con tranquilidad y conocimiento."]},
+    {title:"Enfoque de tratamiento",body:["Su práctica se enfoca en ortodoncia, brackets y alineadores dentales, incluyendo tecnologías como Invisalign, SPARK y SMARTEE.","La indicación de una alternativa depende siempre de una valoración profesional; no todas las opciones son apropiadas para todas las personas."],list:["Valoración individual","Planificación cuidadosa","Seguimiento profesional","Comunicación clara"]},
+    {title:"Formación y credenciales",body:["La información sobre formación académica, certificaciones, asociaciones y experiencia profesional se incorporará cuando sea confirmada. Preferimos no publicar credenciales incompletas o no verificadas."]}
+  ]},
+  { slug:"ortodoncia", title:"Ortodoncia", eyebrow:"SALUD, FUNCIÓN Y ARMONÍA", description:"Qué es la ortodoncia, qué puede corregir y cómo iniciar un tratamiento de ortodoncia en Costa Rica.", intro:"La ortodoncia estudia y trata la posición de los dientes y su relación con la mordida. Una valoración permite conocer qué alternativa puede ser adecuada para cada caso.", sections:[
+    {title:"¿Para qué se utiliza?",body:["Puede ayudar a abordar posiciones dentales y relaciones de mordida que afectan la función, la higiene o la armonía de la sonrisa. El diagnóstico y los objetivos son individuales."],list:["Alineación dental","Relación de mordida","Espacios o apiñamiento","Planificación de la sonrisa"]},
+    {title:"Tratamientos disponibles",body:["Dependiendo de la valoración, el plan puede considerar brackets o alineadores dentales. La elección no depende solo de la apariencia: también considera las necesidades clínicas, los hábitos y la capacidad de seguimiento." ]},
+    {title:"Cómo comienza el proceso",body:["La primera etapa reúne información sobre tu sonrisa, tus expectativas y tu salud oral. Después se explica el plan propuesto, el seguimiento y los cuidados que correspondan."]}
+  ],faqs:[{question:"¿Cuándo conviene consultar?",answer:"Cuando existen dudas sobre la posición de los dientes, la mordida o el desarrollo de la sonrisa. Una consulta no implica necesariamente iniciar tratamiento."},{question:"¿Cuánto dura un tratamiento?",answer:"La duración depende del caso, los objetivos y la respuesta individual. Solo puede estimarse después de una valoración."}]},
+  { slug:"alineadores-dentales", title:"Alineadores dentales", eyebrow:"ORTODONCIA TRANSPARENTE", description:"Guía sobre alineadores dentales transparentes, funcionamiento, cuidados y valoración en Costa Rica.", intro:"Los alineadores son dispositivos transparentes y removibles que se fabrican como parte de una secuencia planificada para mover los dientes de forma progresiva.", sections:[
+    {title:"Cómo funcionan",body:["El tratamiento se planifica a partir de una evaluación y registros digitales. Cada alineador corresponde a una etapa del plan y debe utilizarse siguiendo las indicaciones profesionales.","Ser removibles facilita ciertas rutinas, pero también requiere constancia y responsabilidad por parte del paciente."]},
+    {title:"El proceso",body:["La valoración determina si los alineadores son una alternativa apropiada. Después se realiza la planificación, se entregan las indicaciones y se programan controles para acompañar la evolución."],list:["Valoración clínica","Registros y escaneo","Planificación digital","Entrega y seguimiento","Retención al finalizar"]},
+    {title:"Uso y cuidado",body:["Se retiran para comer y para la higiene oral. Deben limpiarse según las indicaciones recibidas, guardarse en su estuche y evitar fuentes de calor que puedan deformarlos."]}
+  ],faqs:[{question:"¿Todas las personas pueden usar alineadores?",answer:"No necesariamente. La indicación depende de la valoración, los objetivos y las condiciones de cada caso."},{question:"¿Los alineadores son removibles?",answer:"Sí. Se retiran para comer y realizar la higiene, siguiendo siempre las indicaciones de uso."}]},
+  { slug:"brackets", title:"Brackets", eyebrow:"ORTODONCIA DE PRECISIÓN", description:"Información sobre brackets, funcionamiento, proceso y cuidados durante el tratamiento en Costa Rica.", intro:"Los brackets aplican fuerzas controladas mediante un sistema de aparatología fija. Su planificación y seguimiento se ajustan a las necesidades de cada persona.", sections:[
+    {title:"Cómo funcionan",body:["Los brackets se adhieren a los dientes y trabajan junto con arcos y otros elementos indicados por la profesional. Los ajustes periódicos acompañan el movimiento planificado."]},
+    {title:"Cuidados cotidianos",body:["La higiene minuciosa y el cumplimiento de las indicaciones son parte esencial del tratamiento. Si un elemento se afloja o causa una molestia inesperada, conviene contactar al consultorio."],list:["Cepillado cuidadoso alrededor de cada bracket","Uso de implementos recomendados para higiene interdental","Controles según el plan indicado","Evitar manipular la aparatología"]},
+    {title:"Tipos disponibles",body:["Las referencias de la marca muestran brackets metálicos. La disponibilidad de otros tipos debe confirmarse directamente durante la valoración."]}
+  ],faqs:[{question:"¿Qué ocurre si se despega un bracket?",answer:"Conviene comunicarse con el consultorio para recibir indicaciones según la situación. No intentes repararlo en casa."}]},
+  { slug:"invisalign", title:"Invisalign", eyebrow:"TECNOLOGÍA DE ALINEADORES", description:"Información responsable sobre Invisalign como opción de alineadores dentro de un tratamiento de ortodoncia.", intro:"Invisalign es una tecnología comercial de alineadores transparentes. Su utilidad dentro de un tratamiento depende del diagnóstico y de una planificación profesional.", sections:[
+    {title:"Más que una marca",body:["La tecnología es una herramienta dentro del tratamiento. El diagnóstico, los objetivos, el diseño del plan y el seguimiento profesional siguen siendo fundamentales." ]},
+    {title:"Qué puedes esperar",body:["El proceso puede incluir escaneo, planificación digital, entrega de alineadores y controles. La secuencia específica depende de las necesidades del caso." ]},
+    {title:"¿Es para mí?",body:["Solo una valoración puede determinar si esta tecnología es apropiada para tus objetivos y condiciones. También pueden existir otras alternativas que convenga comparar."]}
+  ]},
+  { slug:"spark", title:"SPARK", eyebrow:"ALINEADORES DENTALES", description:"Conozca SPARK dentro de las alternativas de alineadores dentales que pueden considerarse en ortodoncia.", intro:"SPARK es una tecnología de alineadores que puede formar parte de una planificación de ortodoncia. La elección de sistema se realiza según el caso, no únicamente por la marca.", sections:[
+    {title:"Planificación individual",body:["El punto de partida es una evaluación completa. A partir de ella se definen objetivos y se valora si el sistema puede responder a las necesidades identificadas."]},
+    {title:"Participación del paciente",body:["Como en otros tratamientos con alineadores removibles, la constancia de uso, el cuidado del dispositivo y la asistencia a controles son importantes para seguir el plan indicado."]},
+    {title:"Comparar con criterio",body:["Durante la valoración puedes conversar sobre diferencias entre sistemas, otras alternativas y los factores que influyen en la recomendación profesional."]}
+  ]},
+  { slug:"smartee", title:"SMARTEE", eyebrow:"PLANIFICACIÓN DIGITAL", description:"Información sobre SMARTEE como tecnología de alineadores dentales y la importancia de la valoración profesional.", intro:"SMARTEE es otra tecnología disponible dentro del universo de alineadores dentales. Su indicación debe basarse en las características y objetivos de cada sonrisa.", sections:[
+    {title:"Tecnología al servicio del plan",body:["Los registros digitales permiten diseñar una secuencia de tratamiento. La tecnología acompaña el criterio profesional y el seguimiento clínico; no los reemplaza."]},
+    {title:"Una decisión informada",body:["Antes de elegir, es útil comprender el uso esperado, los cuidados, el seguimiento y las alternativas disponibles para tu caso."]},
+    {title:"Siguiente paso",body:["Una valoración permite revisar tu sonrisa y conversar sobre si SMARTEE, otra tecnología de alineadores o los brackets pueden ser considerados."]}
+  ]},
+];
+
+export const faqItems = [
+  {question:"¿Qué son los alineadores dentales?",answer:"Son dispositivos transparentes y removibles diseñados en secuencia para acompañar movimientos dentales planificados."},
+  {question:"¿Cómo sé si puedo usar alineadores?",answer:"Se requiere una valoración profesional. La indicación depende de las necesidades, objetivos y condiciones de cada caso."},
+  {question:"¿Qué diferencia existe entre brackets y alineadores?",answer:"Los brackets son aparatología fija; los alineadores son removibles. La conveniencia de cada alternativa depende del diagnóstico y del plan."},
+  {question:"¿Cómo se limpian los alineadores?",answer:"Deben seguirse las indicaciones de limpieza entregadas por la profesional y evitar productos o temperaturas que puedan dañarlos."},
+  {question:"¿Cada cuánto son los controles?",answer:"La frecuencia se define según el tratamiento y su evolución. Se informa de manera individual al iniciar el proceso."},
+  {question:"¿Qué ocurre en una valoración inicial?",answer:"Se conversa sobre tus necesidades, se revisa la sonrisa y se recopila la información necesaria para explicar posibles alternativas."},
+];
